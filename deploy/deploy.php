@@ -9,7 +9,7 @@ require 'tasks.php';
 set('application', 'goatparser');
 
 // Project repository
-set('repository', 'anton_bagaiev@bitbucket.org:anton_bagaiev/goat-parser.git');
+set('repository', 'parsjourn.github.io.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true); 
