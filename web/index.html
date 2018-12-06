@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GoatParser</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAMAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAAQAAAAHAAAAAwAAAAAAAAAAAAAAAAAAABoAAABOAAAAKwAAABcAAAALAAAAJAAAAAYAAAANAAAABgAAAAIAAAAdAAAAKgAAABkAAAABAAAABgAAAAQAAAAoAAAAXAAAAAAAAAAAAAAAcwAAABkAAAAAAAAAAAAAAAMAAAAFAAAAdwAAAAEAAABjAAAAAAAAAAAAAAAAAAAAAQAAAHAAAAAAAAAALAAAAGEAAAAAAAAAAAAAAAAAAAAAAAAAUwAAADMAAAADAAAAdQAAAAAAAAAAAAAAAAAAAAAAAACeAAAAdQAAAHAAAABrAAAAWAAAAJgAAAB8AAAARwAAANIAAACOAAAAsgAAAEgAAAAAAAAAAAAAAAAAAAAAAAAAKQAAAO8AAADfAAAA2wAAAM8AAADzAAAA5wAAAOYAAADzAAAA3QAAAIUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADYAAADGAAAA8QAAANsAAAD6AAAA5gAAAPUAAADjAAAA/wAAAN8AAADbAAAACgAAAAAAAAAAAAAAAAAAAAAAAAB6AAAA0QAAAPYAAADYAAAA9gAAAPgAAAD/AAAA4QAAAP8AAADwAAAA/wAAAF0AAAAcAAAAFgAAAAAAAAAeAAAAfgAAAP4AAAD/AAAA4wAAAPsAAAD/AAAA/wAAAPcAAAD/AAAA8gAAAP8AAAB6AAAAqAAAAIEAAAAAAAAANwAAAIEAAACVAAAAygAAANQAAABzAAAAYAAAAD0AAAAXAAAALAAAALQAAAD/AAAA7QAAAP0AAACJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhAAAA1gAAAOYAAADgAAAAMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAEoAAAC6AAAAxwAAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAtAAAAfQAAACUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAMbDAAAAAAAAMwcAAAeHAACABwAAgA8AAIAHAACAAQAAAAEAAAABAAD/wQAA/8EAAP/DAAD/5wAA//8AAA=="
+          rel="icon" type="image/x-icon">
+
+</head>
+<body>
+
+<div class="container">
+
+    <iframe src='http://randomgoat.com/embed.php' width='240' height='180' frameBorder='0' id='random-goat-embed'
+            allowFullScreen></iframe>
+
+    <h2>I am a parser prototype</h2>
+
+    <div class="form-group">
+        <div class="input-group">
+            <input class="form-control" id="parent" type="text" value="http://www.ijese.net/arsiv/157">
+            <span class="input-group-btn">
+            <button class="btn btn-success">Go!</button>
+        </span>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+
+        <p>Progress dashboard</p>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width:0%">
+            </div>
+        </div>
+
+        <ul class="list-group">
+            <li class="list-group-item">Status<span class="badge dashboard-status"></span></li>
+            <li class="list-group-item">Current document<span class="badge dashboard-current-document"></span></li>
+            <li class="list-group-item">Documents found<span class="badge dashboard-documents-found">0</span></li>
+            <li class="list-group-item">Emails found<span class="badge dashboard-emails-found">0</span></li>
+        </ul>
+
+    </div>
+
+    <div class="form-group">
+        <label for="results">Results:</label>
+        <textarea id="results" class="form-control" rows="10"></textarea>
+    </div>
+</div>
+
+<!-- Hello Bootrap and other guys -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/onload.js?v2"></script>
+<script src="js/parser.js?v2"></script>
+
+</body>
+</html>
